@@ -13,4 +13,6 @@ public final class HashDatabase {
 
     public static final String NAME = "HashDB";
     public static final int VERSION = 1;
+
+    public static final String WEB_PAGE_TABLE = "WebPages";
 }

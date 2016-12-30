@@ -23,7 +23,7 @@ import hr.karlovrbic.hashchecker.dao.HashDatabase;
  * @author Karlo Vrbic
  * @version 1.0, 29.12.2016.
  */
-@Table(database = HashDatabase.class)
+@Table(database = HashDatabase.class, name = HashDatabase.WEB_PAGE_TABLE)
 public final class WebPage extends BaseModel implements Parcelable {
 
     public static final Creator<WebPage> CREATOR = new Creator<WebPage>() {
@@ -39,11 +39,12 @@ public final class WebPage extends BaseModel implements Parcelable {
     };
 
     @PrimaryKey(autoincrement = true)
+    @Column(name = "id")
     private long id;
-    @Column
+    @Column(name = "url")
     @Unique(onUniqueConflict = ConflictAction.FAIL)
     private String url;
-    @Column
+    @Column(name = "hashcode")
     private String hashcode;
 
     public WebPage(String url, String hashcode) {
