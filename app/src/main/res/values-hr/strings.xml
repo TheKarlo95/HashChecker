@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hash Checker</string>
+    <string name="hash_logo_description">hash_logo</string>
+    <string name="et_website_label">Web stranica</string>
+    <string name="btn_find_hash_label">Preuzmi i hashiraj</string>
+    <string name="webpage_loading">Učitavanje</string>
+    // dialog strings
+    <string name="dialog_title">Hash kod web stranice</string>
+    <string name="dialog_message_database">URL:\n%1$s \n\nHash kod:\n%2$s \n\nSpremljeno u:\nBazu podataka</string>
+    <string name="dialog_message_preferences">URL:\n%1$s \n\nHash kod:\n%2$s \n\nSpremljeno u:\nSharedPreferences</string>
+    // error messages
+    <string name="error_invalid_url">Nepravilan URL</string>
+    <string name="error_no_internet">Molim Vas da se prvo spojite na internet.</string>
+    <string name="error_various">Greška</string>
+</resources>

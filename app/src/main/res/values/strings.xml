@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hash Checker</string>
+    <string name="hash_logo_description">hash_logo</string>
+    <string name="et_website_label">Website</string>
+    <string name="btn_find_hash_label">Download &amp; Hash</string>
+    <string name="webpage_loading">Loading</string>
+    // dialog strings
+    <string name="dialog_title">Web page hash</string>
+    <string name="dialog_message_database">URL:\n%1$s \n\nHashcode:\n%2$s \n\nSaved in:\nDatabase</string>
+    <string name="dialog_message_preferences">URL:\n%1$s \n\nHashcode:\n%2$s \n\nSaved in:\nSharedPreferences</string>
+    // error messages
+    <string name="error_invalid_url">Invalid URL</string>
+    <string name="error_no_internet">Please connect to internet first.</string>
+    <string name="error_various">Some error occurred</string>
+</resources>

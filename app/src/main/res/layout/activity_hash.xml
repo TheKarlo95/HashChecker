@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_hash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_background"
+                android:orientation="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                tools:context="hr.karlovrbic.hashchecker.features.hash.views.HashActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/activity_card_top_margin"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_website"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/et_website_label"
+                    android:inputType="textWebEditText"
+                    android:maxLines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#d67601"
+                android:text="@string/btn_find_hash_label"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imbtn_hash_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_logo_top_margin"
+        android:background="@drawable/ic_hashtag"
+        android:elevation="7dp"
+        android:contentDescription="@string/hash_logo_description"/>
+</RelativeLayout>
