@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
@@ -14,23 +22,18 @@ android {
     buildTypes {
         release {
             minifyEnabled true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
-            applicationIdSuffix ".debug"
-        }
     }
-
-    return void
 }
 
 dependencies {
-    def support_version = "25.0.1"
+    def support_version = "25.1.0"
     def butterknife_version = "8.4.0"
     def dagger_version = "2.7"
     def dbflow_version = "4.0.0-beta3"
     def okhttp_version = "3.5.0"
-
     // support
     compile "com.android.support:appcompat-v7:${support_version}"
     compile "com.android.support:cardview-v7:${support_version}"
