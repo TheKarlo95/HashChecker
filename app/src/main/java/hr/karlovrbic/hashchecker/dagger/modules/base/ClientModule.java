@@ -18,7 +18,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 @Module
 public final class ClientModule {
 
-    private static final int NETWORK_TIMEOUT_SECONDS = 60;
+    private static final int NETWORK_TIMEOUT_SECONDS = 5;
 
     @Provides
     @Singleton
