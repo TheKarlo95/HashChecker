@@ -20,6 +20,7 @@
 -keepattributes InnerClasses
 -dontwarn org.apache.commons.digester.**
 -dontwarn org.apache.commons.beanutils.**
+-dontwarn org.apache.commons.collections.BeanMap
 -dontwarn okio.Okio
 -dontwarn okio.DeflaterSink
 -keep class com.raizlabs.android.dbflow.config.GeneratedDatabaseHolder
