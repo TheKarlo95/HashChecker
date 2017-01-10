@@ -41,7 +41,7 @@ dependencies {
     // apache-commons
     compile 'org.apache.commons:commons-lang3:3.4'
     compile 'commons-codec:commons-codec:1.10'
-    compile 'commons-validator:commons-validator:1.4.0'
+    compile 'commons-validator:commons-validator:1.5.1'
     // butterknife
     annotationProcessor "com.jakewharton:butterknife-compiler:${butterknife_version}"
     compile "com.jakewharton:butterknife:${butterknife_version}"
